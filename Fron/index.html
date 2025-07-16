@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barber Shop 💈</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="icon.jpg">
+</head>
+<body>
+<!-- Navegación -->
+  <nav>
+    <div><strong>Barber Shop 💈</strong></div>
+    <div>
+      <a href="#inicio">Inicio</a>
+      <a href="#inicio">ayuda</a>
+      <button id="loginBtn">Iniciar Sesión</button>  <!-- Botón para abrir el formulario de login -->
+    </div>
+  </nav>
+
+  <!-- Formulario Modal -->
+  <div id="loginModal" class="modal oculto">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="modal-body">
+        <form id="loginForm">
+          <h2>Iniciar Sesión</h2>
+          <label for="usuario">Usuario:</label>
+          <input type="text" id="usuario" name="usuario" required />
+
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" required />
+
+          <button class="submit-btn" type="submit">Entrar</button>
+        </form>
+        <div class="login-image">
+          <img src="barber.jpg" alt="Barbería" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección de Bienvenida -->
+  <section id="inicio" class="bienvenida">
+  <div class="texto">
+    <h1>Barber Shop: Donde el Estilo se Vuelve Leyenda</h1>
+    <p>
+      Esto no es una barbería cualquiera. Es <strong>Barber Shop</strong>: un lugar donde el flow se mezcla con la elegancia, y cada corte cuenta una historia. Aquí no vienes solo a arreglarte el pelo… vienes a marcar diferencia.
+    </p>
+    <p>
+      Desde que entras, sientes la vibra: atención exclusiva, detalles de lujo, productos premium y un ambiente diseñado para los que saben lo que quieren. Ya sea un corte afilado, un fade impecable o una barba con clase, aquí cada servicio está hecho a tu medida.
+    </p>
+    <p>
+      Porque el estilo no se improvisa. Se vive. Se respira. Y en <strong>Barber Shop</strong>, lo llevamos al siguiente nivel.
+    </p>
+  </div>
+</section>
+<img src="barbershop.jpg" alt="">
+
+  <!-- Sección de Servicios -->
+  <section id="servicios" class="servicios">
+    <h2>Servicios</h2>
+
+    <div class="tooltip-container">
+  <button class="tooltip-trigger">✂️ Servicios de corte y peinado</button>
+  <div class="tooltip-content">
+    <ul>
+      <li>Corte clásico</li>
+      <li>Corte moderno (fade, taper, crop, etc.)</li>
+      <li>Corte infantil</li>
+      <li>Corte con tijera</li>
+      <li>Diseño personalizado de corte</li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="tooltip-container">
+  <button class="tooltip-trigger">🧔 Servicios de barba</button>
+  <div class="tooltip-content">
+    <ul>
+      <li>Arreglo y perfilado de barba</li>
+      <li>Afeitado tradicional con navaja</li>
+      <li>Afeitado con toalla caliente</li>
+      <li>Diseño de barba</li>
+      <li>Hidratación de barba</li>
+      <li>Tinte de barba</li>
+    </ul>
+  </div>
+</div>
+
+    <div class="tooltip-container">
+  <button class="tooltip-trigger">💈 Tratamientos capilares y cuidado personal</button>
+  <div class="tooltip-content">
+    <ul>
+      <li>* Lavado capilar con shampoo especial</li>
+      <li>* Hidratación y nutrición capilar</li>
+      <li>* Aplicación de tratamientos anticaída</li>
+      <li>* Exfoliación facial</li>
+      <li>* Limpieza facial básica</li>
+      <li>* Masaje capilar relajante</li>
+      <li>* Depilación de cejas, nariz y orejas</li>
+    </ul>
+  </div>
+</div>
+
+    <div class="tooltip-container">
+      <button class="tooltip-trigger">🧴 Coloración y estilo</button>
+      <div class="tooltip-content">
+        <ul>
+          <li>Tinte para cabello</li>
+          <li>Mechas o reflejos</li>
+          <li>Decoloración</li>
+          <li>Planchado o alisado exprés</li>
+          <li>Peinados para eventos</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tooltip-container">
+      <button class="tooltip-trigger">🎉 Servicios especiales</button>
+      <div class="tooltip-content">
+        <ul>
+          <li>Paquetes para eventos (bodas, grados, cumpleaños)</li>
+          <li>Servicio a domicilio</li>
+          <li>Membresías o suscripciones mensuales</li>
+          <li>Venta de productos para el cuidado personal (aceites, ceras, bálsamos, shampoo, etc.)</li>
+          <li>Zona de espera con café, bebidas o videojuegos (si aplica)</li>
+        </ul>
+      </div>
+
+    </div>
+<!-- Sección de Reserva (solo visible si el usuario está logueado) -->
+<section id="reserva" class="oculto">
+  <h2>Haz tu reserva</h2>
+  <form id="reservaForm">
+    <label for="fecha">Fecha:</label>
+    <input type="date" id="fecha" required />
+
+    <label for="hora">Hora:</label>
+    <input type="time" id="hora" required />
+
+    <button type="submit">Reservar</button>
+  </form>
+</section>
+<button id="abrirReserva">Reservar cita</button>
+
+
+<!-- Resumen -->
+  <section id="resumen" class="resumen">
+    <h2>Resumen</h2>
+    <p>En Barber Shop, combinamos tradición y modernidad...</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Barber Shop. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="main.js"></script>
+</body>
+</html>
