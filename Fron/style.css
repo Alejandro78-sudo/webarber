@@ -11,7 +11,7 @@ nav {
   position: fixed;
   top: 0;
   width: 98%;
-  background-color: rgba(2, 47, 95, 0.549);
+  background-color: rgba(164, 86, 8, 0.539);
   color: white;
   display: flex;
   justify-content: space-between;
@@ -27,7 +27,7 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.6));
+  background: linear-gradient(to bottom right, rgba(137, 180, 203, 0.919), rgba(166, 11, 11, 0.6));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,15 +120,13 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.login-image img {
   width: 100%;
-  max-width: 300px;
+  text-align: center;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
+
 
 /* ---------- Ocultar elementos ---------- */
 .oculto {
@@ -168,9 +166,10 @@ nav {
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 6px;
+  border-radius: 20px;
   cursor: pointer;
   font-size: 16px;
+  margin-top: 10px;
 }
 
 .tooltip-content {
@@ -180,7 +179,7 @@ nav {
   left: 50%;
   transform: translateX(-50%);
   background-color: #ffffff;
-  padding: 15px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(242, 5, 5, 0.637);
   z-index: 100;
@@ -209,4 +208,33 @@ nav {
   width: 100%;
   margin: 10px 0;
   font-size: 16px;
+}
+#redes {
+  color: #080707;
+  background-color: rgba(19, 245, 57, 0.824);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow:0 4px 10px #00fc32;
+  
+}
+#Ubicacion {
+  color: #080707;
+  background-color: azure;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow:0 4px 10px aqua;
+}
+img{
+  width: 100%;
+  text-align: center;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: auto;
+}
+/* Media query para móviles */
+@media (max-width: 300px) {
+  .login-image img {
+    max-width: 150px; /* tamaño máximo reducido en pantallas pequeñas */
+  }
 }
